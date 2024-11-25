@@ -1,0 +1,76 @@
+/* General Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+  }
+  
+  .menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .menu-links {
+    display: flex;
+    gap: 15px;
+    flex: 1;
+  }
+  
+  .menu-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu-links a:hover {
+    background-color: yellow;
+    border-radius: 4px;
+  }
+  
+  .dropdownContent {
+    position: absolute;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 4px;
+    display: block;
+  }
+  
+  .customer {
+    position: relative;
+  }
+  
+  .customer a {
+    color: white;
+  }
+  
+  .bank-name {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    margin-right: 20px; /* Shift it slightly left */
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .menu-links {
+      display: block;
+      margin-top: 10px;
+    }
+  
+    .bank-name {
+      text-align: center;
+      margin-top: 10px;
+      margin-right: 0; /* Reset the right margin for mobile */
+    }
+  }
+  
